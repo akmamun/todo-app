@@ -1,0 +1,32 @@
+{% include "partials/header.html" %}
+{% if request.user.is_authenticated %}
+        <div class="row">
+        <div class="addto">
+              <h3><a href="/todo/add">Add Todo</a></h3>
+        </div>
+
+        <ul class="list-group">
+            {% for todo in todos %}
+                <li class="list-group-item"><a href="/todo/details/{{todo.id}}">{{ todo.title }}</a> {{ todo.text }}</li>
+            {% endfor %}
+        </ul>
+        </div>
+    {% else %}
+        <div class="userarea">
+        <div class="signup-in" >
+
+              <a href="todo/login/">Login</a> <br>
+            or <br> <a href="todo/register/">Signup</a> for Registration <br>
+
+
+
+
+        </div>
+        </div>
+{% endif %}
+
+{% include "partials/footer.html" %}
+
+</div>
+ </body>
+</html>

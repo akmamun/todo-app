@@ -1,0 +1,16 @@
+{% include "partials/header.html" %}
+<a href="/todo">Go Back</a>
+<div class="form-group">
+<form action="{% url 'add' %}" method="post">
+{% csrf_token %}
+  <label for="title">Title</label><br />
+  <input type="text" class="form-control" name="title" id="title" required/>
+  <br>
+  <label for="text">Details</label><br />
+  <textarea name="text" class="form-control" rows="3" id="text"></textarea>
+  <br><br>
+  <input type="submit" value="Add List"  class="btn btn-default"/>
+</form>
+<br>
+</div>
+{% include "partials/footer.html" %}

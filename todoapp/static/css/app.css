@@ -1,0 +1,21 @@
+.body{
+
+    width: 1170px;
+
+}
+h1{
+    color: black;
+}
+h2{
+    color: grey;
+}
+body > div.userarea > div{
+float: right;
+    margin:20px;
+}
+.signup-in{
+
+    text-align: center;
+    font-size: 22px;
+
+}

@@ -1,5 +1,5 @@
 
-# Todo List In Python/Django
+# Todo List With Python/Django
 * Used Django 1.11
 * Bootstrap
  
